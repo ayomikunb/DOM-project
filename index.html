@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOODA SHOPPING CART</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+   
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+            <li>
+                <a href class="navbar">Home</a>
+            </li>
+            <li>
+                <a href class ="navbar">About</a>
+            </li>
+            <li>
+                <a href class="navbar">Contact</a>
+            </li>
+            <li>
+                <a href class="navbar">Product</a>
+            </li>
+            <li>
+                <a href class="navbar">Services</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<h1 class= "firsth1">Welcome to Yooda...</h1>
+<div class="flex">
+        <img src="./yooda hairs.png" alt="Yooda hairs"> 
+        <div class="how">
+            <br>
+            <br>
+            <h1 id="first">HOW MAY WE HELP YOU?</h1>
+            <br>
+            <br>
+            <h1 id="second">Are you interested in our product???</h1>
+            <br>
+            <h1 id="third">CHECK IT OUT BELOW</h1>
+            <h1 id="forth">⬇⬇⬇</h1>
+        </div>
+        </div>
+   
+  
+
+  <h1 id="product">OUR PRODUCTS</h1>
+<div class="cart">
+  <i class="bi bi-cart"></i>
+  <div class="cartamount">0</div>
+</div>
+
+
+    <div class="shoppingcartcontainer" id="shoppingcartcontainer">
+        
+         <div class="firstcart" id="firstcart">
+              <img src="./ombre-brown-to-blonde-wavy-style-lace-wig-wowebony_7_.jpg" alt="ombrebrownhair" />
+            
+         <div class="description">
+              <h3>Wavy frontal wig</h3>
+              
+              <span id="color">28inches</span>
+              <span id="color">Ombrebrown</span>
+            </div>
+        
+            <div class="quantity" id="quantity">
+              <button class="plus" id="inc" onclick="incNumber()">+</button>
+
+             <span class="num" id="display" >0</span>
+             <button class="minus" id="dec"  onclick="decNumber()">-</button>
+              </button>
+            </div>
+              <div class="item" id="item">
+                <i class="bi bi-heart"  onclick="changeColor()" id="heart"  ></i>
+                
+              </div>
+         
+            <span class="total-price" id="price" >N150,000</span>
+          <button class="remove" id="remove">Remove</button>
+
+         </div>
+         <div class="secondcart">
+            
+                <img src="./Screenshot_20211016_082150_com.instagram.android - Edited.png" alt="fringe" />
+              
+           
+              <div class="description">
+                <h3> Fringe Body Wave</h3>
+                <span id="color">18inches</span>
+                <span id="color">ombrebrown</span>
+              </div>
+           
+              <div class="quantity" id="quantity">
+                <button class="plus" id="inc" onclick="incNumber2()">+</button>
+              
+                <span class="num" id="display2"  >0</span>
+                
+                <button class="minus"  id="dec" onclick="decNumber2()">-</button>
+              
+              </div>
+
+                <div class="item">
+                  <i class="bi bi-heart"  onclick="changeColor2()" id="heart2"  ></i>
+                  
+              </div>
+           
+              <div class="total-price" id="total" >N40,000 </div>
+              <button class="remove" id="remove">Remove</button>
+         </div>
+         <div class="thirdcart">
+              
+                <img src="./images (45) - Edited.png" alt="wigstand" />
+              
+           
+              <div class="description">
+                <h3>wavy style lace wig</h3>
+                <span id="color">28inches</span>
+                <span id="color">ombrebrown</span>
+              </div>
+           
+              <div class="quantity" id="quantity">
+                <button class="plus" id="inc" onclick="incNumber3()"  >+</button>
+              
+                <span class="num" id="display3">0</span>
+                <button class="minus"id="dec" onclick="decNumber3()"  >-</button>
+             
+              </div>
+                <div class="item">
+                  
+                  <i class="bi bi-heart"  onclick="changeColor3()" id="heart3"></i>
+                  
+              </div>
+           
+              <div class="total-price">N2,000</div>
+              <button class="remove" id="remove">Remove</button>
+         </div>
+         <div class="forthcart">
+              
+                <img src="./Screenshot_20211016_121204_com.instagram.android - Edited (1).png" alt="ombrebrownhair" />
+              
+           
+              <div class="description">
+                <h3>wavy style lace wig</h3>
+                <span id="color">28inches</span>
+                <span id="color">ombrebrown</span>
+              </div>
+           
+              <div class="quantity" id="quantity" >
+                <button class="plus" id="inc" onclick="incNumber4()"  >+</button>
+              
+                <span class="num" id="display4">0</span>
+                <button class="minus" id="dec" onclick="decNumber4()">-</button>
+              
+              </div> 
+                <div class="item">
+                  
+                  <i class="bi bi-heart"  onclick="changeColor4()" id="heart4" ></i>
+                
+              </div>
+           
+              <div class="total-price" id="total" >N50,000</div>
+              <button class="remove" id="remove">Remove</button>
+            </div>
+            <div class="fifthcart">
+              
+                <img src="./straightner.jpg" alt="ombrebrownhair" />
+              
+           
+              <div class="description">
+                <h3>wavy style lace wig</h3>
+                <span id="color">28inches</span>
+                <span id="color">ombrebrown</span>
+              </div>
+           
+              <div class="quantity"  id="quantity">
+                <button class="plus" id="inc" onclick="incNumber5()">+</button>
+              
+                <span class="num" id="display5">0</span>
+                <button class="minus" id="dec" onclick="decNumber5()">-</button>
+             
+              </div>
+                <div class="item">
+                
+                  <i class="bi bi-heart"  onclick="changeColor5()" id="heart5" ></i>
+                  
+              </div>
+           
+              <div class="total-price"  id="total">N10,000</div>
+              <button class="remove" id="remove">Remove</button>
+            </div>
+            <div class="sixthcart">
+              
+                <img src="./Screenshot_20211020_110856 - Edited.png" alt="ombrebrownhair" />
+              
+           
+              <div class="description">
+                <h3>Straight Human Hair wig</h3>
+                <span id="color">40inches</span>
+                <span id="color">ombreblue</span>
+              </div>
+           
+              <div class="quantity"  id="quantity">
+                <button class="plus" id="inc" onclick="incNumber6()" >+</button>
+             
+                <span class="num" id="display6">0</span>
+                <button class="minus"id="dec" onclick="decNumber6()"  >-</button>
+              
+              </div>
+                <div class="item">
+
+                  <i class="bi bi-heart"  onclick="changeColor6()" id="heart6" ></i>
+                  
+              </div>
+           
+              <div class="total-price"  id="total">N250,000</div>
+              <button class="remove" id="remove">Remove</button>
+
+</div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
